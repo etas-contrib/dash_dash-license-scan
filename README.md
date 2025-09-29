@@ -1,6 +1,6 @@
-# dash-licenses-cli
+# dash-license-scan
 
-[![PyPI](https://img.shields.io/pypi/v/dash-licenses-cli.svg)](https://pypi.org/project/dash-licenses-cli/)
+[![PyPI](https://img.shields.io/pypi/v/dash-license-scan.svg)](https://pypi.org/project/dash-license-scan/)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 
 A thin Python CLI wrapper for [eclipse-dash/dash-licenses](https://github.com/eclipse-dash/dash-licenses).  
