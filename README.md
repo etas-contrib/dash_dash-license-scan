@@ -31,7 +31,9 @@ System Requirements:
 * you have uvx or pipx installed.
 * you jave Java >= 11 installed (e.g. openjdk-21-jre-headless)
 
-Commands you need to run. NO FURTHER INSTALLATION.
+NO FURTHER INSTALLATION.
+
+## Usage
 
 * To scan a python lockfile run: `uvx dash-license-scan --pypi path/to/requirements.txt`
 * To scan a cargo lockfile run: `uvx dash-license-scan --crate path/to/Cargo.lock`
