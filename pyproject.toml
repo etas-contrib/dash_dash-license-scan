@@ -1,0 +1,39 @@
+[project]
+name = "dash-license-scan"
+version = "0.0.0"
+description = "A thin Python CLI wrapper for eclipse-dash/dash-licenses (JAR) with lockfile helpers."
+readme = "README.md"
+requires-python = ">=3.9"
+# license = { text = "Apache-2.0" or "EPL-2.0" } < FIXME
+authors = [{ name = "Alexander Lanin" }]
+keywords = ["licenses", "oss", "dash", "eclipse", "sbom"]
+dependencies = []
+
+[project.scripts]
+dash-license-scan = "dash_license_scan.main:main"
+# dlscan = "dash_license_scan.main:main"
+
+[project.urls]
+Homepage = "https://github.com/eclipse-dash/dash-license-scan"
+Source = "https://github.com/eclipse-dash/dash-license-scan"
+Issues = "https://github.com/eclipse-dash/dash-license-scan/issues"
+
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dash_license_scan"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "src/dash_license_scan/**",
+  "pyproject.toml",
+  "README.md"
+  # FIXME: stuff is missing here. How about **?
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+]
